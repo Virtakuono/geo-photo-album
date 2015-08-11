@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./leaflet-0.7.3/leaflet.css" />
+  <link rel="stylesheet" href="./master/screen.css" />
+  <script src="./leaflet-0.7.3/leaflet.js"></script>
+</head>
+<body>
+  <div class="container">
+  <div id="map" class="map" style="width: 60em; height: 40em"></div>
+  <script>
+
+
+   var map = L.map('map').setView([47.951127, 106.944048], 5);
+   
+   L.tileLayer('http://{s}.tile.thunderforest.com/cycle/{z}/{x}/{y}.png', {
+     maxZoom: 18,
+     attribution: 'Map &copy; <a href="http://osm.org/">OSM</a>',
+     id: 'tehTile'}).addTo(map);
+
+   L.marker([47.90188889, 106.86776667]).addTo(map).bindPopup("<b>IMG_4152.jpg</b><br /><a href=\"IMG_4152.jpg\"><img src=\"././thumbs/IMG_4152_TN.jpg\" width=\"150\" height=\"150\"></a><br />2015:07:31 15:32:40<br />47.90188889 &deg; N, 106.86776667 &deg; E ");
+   L.marker([47.90190000, 106.86776667]).addTo(map).bindPopup("<b>IMG_4153.JPG</b><br /><a href=\"IMG_4153.JPG\"><img src=\"././thumbs/IMG_4153_TN.JPG\" width=\"150\" height=\"150\"></a><br />2015:07:31 15:32:43<br />47.90190000 &deg; N, 106.86776667 &deg; E ");
+   L.marker([47.90190000, 106.86776667]).addTo(map).bindPopup("<b>IMG_4154.JPG</b><br /><a href=\"IMG_4154.JPG\"><img src=\"././thumbs/IMG_4154_TN.JPG\" width=\"150\" height=\"150\"></a><br />2015:07:31 15:32:45<br />47.90190000 &deg; N, 106.86776667 &deg; E ");
+   L.marker([47.90191944, 106.86775833]).addTo(map).bindPopup("<b>IMG_4155.jpg</b><br /><a href=\"IMG_4155.jpg\"><img src=\"././thumbs/IMG_4155_TN.jpg\" width=\"150\" height=\"150\"></a><br />2015:07:31 15:32:50<br />47.90191944 &deg; N, 106.86775833 &deg; E ");
+   L.marker([48.14802451, 107.24918256]).addTo(map).bindPopup("<b>IMG_4158.JPG</b><br /><a href=\"IMG_4158.JPG\"><img src=\"././thumbs/IMG_4158_TN.JPG\" width=\"150\" height=\"150\"></a><br />No geodata available.");
+</script>
+</body>
+</html>
